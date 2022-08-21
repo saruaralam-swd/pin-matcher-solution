@@ -10,12 +10,16 @@
   <body>
     <div class="container">
       <div class="row">
+        <!-- Generate left side -->
         <div class="col-md-6">
           <div class="pin-generator half-width">
             <input class="form-control" type="text" id="generate-field"/>
             <button class="generate-btn" id="generate-btn">Generate Pin</button>
           </div>
         </div>
+        <!-- generate left side end -->
+
+        <!-- Calculator right side -->
         <div class="col-md-6">
           <div class="input-section half-width" id="calculator">
             <input class="form-control" type="text" id="calc-input-field"/>
@@ -49,10 +53,14 @@
             </div>
           </div>
         </div>
+        <!-- calculator right side end -->
+
+        <!-- pin match alert -->
         <div class="notify-section">
           <p style="display:none;" id="incorrect-pin" class="notify">❌ Pin Didn't Match, Please try again</p>
           <p style="display:none;" id="correct-pin" class="notify">✅ Pin Matched... Secret door is opening for you</p>
         </div>
+        <!-- pin match alert end -->
       </div>
     </div>
     <script src="./js/app.js"></script>
